@@ -1,47 +1,412 @@
-html{
-	margin: 0;
-	padding: 0;
-	background-color: white;
-	font-family: 'Helvetica', Geneva, Verdana, Arial, sans-serif;
-	font-size: 24px;
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #070a1f;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .parallax {
+    background-image: url('WechatIMG2.jpeg');
+
+    height: 100pc; 
+    width: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #navbar {
+    background-color: #070a1f;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    
+  }
+  
+  #navbar a:hover {
+    background-color: #91b8f3;;
+    height: 60px;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .topnav-right {
+    float: right;
+    font-size: 17px;
+  }
+  
+  .homeicon{
+      font-family: Stencil Std, fantasy;
+      font-size: 24px;
+  }
+  
+  #mySidenav a {
+    position: fixed;
+    left: -90px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 0 20px 20px 0;
+  }
+  
+  #mySidenav a:hover {
+    left: 0px;
+  }
+  
+  #Vlog {
+    top: 250px;
+    background-color: #91b8f3;
+  }
+  
+  #Dancing {
+    top: 330px;
+    background-color: #e7b99c;
+  }
+  
+  #Sewing {
+    top: 410px;
+    background-color: #EFDCBE;
+  }
+  
+  #myVideo {
+    position: relative;
+    left:0;
+    top:50px;
+    width: 100%;
+    height:auto;
+  }
+
+ 
+  
+  .content {
+    position: absolute;
+    top: 50px;
+    background: rgba(1, 15, 32, 0.5);
+    color: #ffffff;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 27px;
+  }
+  
+  
+  #myBtn {                                                                                            
+    width: 100px;
+    margin-top: 30px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    background: #070a1fb6;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  #myBtn:hover {
+    background: #91b8f3;
+    color: black;
+  }
+  .arrow{
+      padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+  
+  div.relative {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    left: 30px;
+    border: 3px solid #ffffff;
+  }
+
+  .hwk{
+    background-color: white;
+    padding:30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding:100px;
+  }
+  
+  .vlogPage{
+    background: #91b8f3;
+    color: white;
+    padding-top:50px;
+    padding-bottom: 15%;
+
+  }
+  .blacktitle{
+    background-color: white;
+    width:100%;
+    height: auto;
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .whitetitle{
+    background-color: #070a1f;
+    color:#f1f1f1;
+    width:100%;
+    height: auto;
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .whitegreytitle{
+    background-color: #070a1f;
+    color:#979797;
+    width:100%;
+    height: auto;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .greytitle{
+    background-color: white;
+    color:grey;
+    width:100%;
+    height: auto;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .subtitle{
+      padding:40px;
+      font-size: 30px;
+      text-align: center;
+  }
+
+  .vlogs{
+    display: flex;
+    justify-content: space-evenly;
+}
+  .container {
+    position: relative;
+    width: 40%;
+    max-width: 500px;
+ 
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(16, 5, 73);
+    background: rgba(7, 4, 104, 0.5); 
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  .container2 {
+    position: relative;
+    width: 40%;
+    max-width: 500px;
+  }
+  .container2:hover .overlay {
+    opacity: 1;
+  }
+  
+.dancePage{
+    background: #e7b99c;
+    color: white;
+    padding-top:50px;
+    padding-bottom: 15%; 
+    
+}
+.videogallery{
+  display: flex;
+  justify-content:space-evenly;
+  padding:10px 10px; 
+}
+#danceVideo {
+    display: flex;
+    align-items:stretch;
+    position: relative;
+    width: 20%;
+    height:auto;
+    padding-left:10px;
+    padding-right:10px;
+
+  }
+.sewPage{
+    background: #EFDCBE;
+    color: white;
+    padding-top:50px;
+    padding-bottom: 20%;  
 }
 
-input{
-	font-size: 24px;
-	line-height: 30px;
-	height: 30px;
+.sewgallery{
+    padding-left:30%;
+    padding-right:30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding:0;
 }
 
-button{
-	text-align: center;
-	font-weight: bold;
-	font-size: 20px;
-	height: 40px;
-	width: 120px;
-	margin-top: 10px;
-	border: 2px none;
-	border-radius: 10px;
+.gallery{
+  background-color: white;
+  padding-left:100px;
+  padding-right:100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding:250px 100px;
+}
+  
+.column{
+    padding:100px;
+    flex: 20%;
+    max-width: 40%;
+    padding: 15px 5px;
 }
 
-button:hover{
-	background-color: rgb(76, 126, 242);
-	color: white;
+.moresketches{
+  background-color: white;
+  padding-left:10px;
+  padding-right:10px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-#searchTerm{
-	width: 30%;
-	text-align: center;
-	margin: 5px auto;
+.headgallery{
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+  flex: 20%;
+  max-width: 30%;
+  padding: 15px 5px;
 }
 
-.wikiResults{
-	background-color: rgb(255, 100, 127);
-	text-align: center;
-	padding: 30px;
-	margin: 5px auto;
-	width: 30%;
+.About{
+  width:100%;
+  height:auto;
+  background-color: #070a1f2d;
+  border-color: gray;
+  padding-left:100px;
+  padding-right:100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding:250px 100px;
 }
 
-.wikiResults:hover{
-	background-color: rgb(107, 255, 124);
+.Contact{
+  background-color: #070a1f36;
+  border-color: gray;
+  padding-left:100px;
+  padding-right:100px;
+  display: flex;
+  justify-content:center;
+  padding:250px 100px;
+}
+
+@media screen and (max-width: 950px) {
+  .content {
+    font-size: 23px;
+    }
+  .arrow{
+    color: rgba(0, 0, 0, 0);
+    width:0;
+   height:0;
+}
+.blacktitle{ 
+  padding: 30px;
+  font-size: 20px;
+
+}
+
+.whitetitle{
+  padding: 30px;
+  font-size: 20px;
+}
+
+.whitegreytitle{
+  padding: 25px;
+  font-size: 15px;
+}
+
+.greytitle{
+  padding: 25px;
+  font-size: 15px;
+}
+
+.subtitle{
+    padding:30px;
+    font-size: 20px;
+}
+
+.column {
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+}
+
+.videogallery{
+  
+  flex-direction: row;
+  justify-content: center;
+  padding:10px 10px; 
+}
+
+
+@media screen and (max-width: 600px) {
+    .content {
+    font-size: 15px;
+    }
+    .arrow{
+      color: rgba(0, 0, 0, 0);
+      width:0;
+     height:0;
+  }
+     .column {
+        -ms-flex: 100%;
+        flex: 90%;
+        max-width: 90%;
+      }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+ } 
 }
