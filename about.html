@@ -8,6 +8,17 @@
 	</head>
 
 	<body>
+        <div id="navbar">
+			<a href="index.html" class="homeicon">Duorfan</a>
+		  
+			<div class="topnav-right">
+				<a href="projects.html">PROJECTS</a>
+				<a href="life.html">LIFE</a>
+			  	<a href="about.html">ABOUT</a>
+			  
+			</div>
+		</div>
+
 		<div id="about" class="About">
             <a class="whitetitle">ABOUT ME</a>
             <a class="whitegreytitle">Welcome to my website!</a>
@@ -22,8 +33,20 @@
             <a class="whitegreytitle">Ins: duorfan</a>
             <a class="whitegreytitle">WeChat: duorfan</a>
           </div>
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+  		if (prevScrollpos > currentScrollPos) {
+ 		   document.getElementById("navbar").style.top = "0";
+ 		 } else {
+  		   document.getElementById("navbar").style.top = "-50px";
+  			}
+  		prevScrollpos = currentScrollPos;
 
-          
+		}
+	</script>	
+
 
 
 	</body>
