@@ -4,33 +4,79 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width">
 		<title>Duorfan's portfolio</title>
+		<link rel="shortcut icon" href="duorfan logo.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script>document.documentElement.className = "js";
+		var supportsCssVars = function supportsCssVars() {
+			var e,
+				t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+		  };
+		  
+		  supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 
 	<body>
-		<div id="navbar">
-			<a href="index.html" class="homeicon">Duorfan</a>
-		  
-			<div class="topnav-right">
-				<a href="projects.html">PROJECTS</a>
-				<a href="life.html">LIFE</a>
-			  	<a href="about.html">ABOUT</a>
-			  
+		<main>
+			<!-- <div class="message">Please view this demo on a desktop to see the effect.</div> -->
+			<div class="frame">
+				<!-- <div class="frame__title-wrap">
+					<h1 class="frame__title">Image Grid Motion Interaction</h1>
+				</div> -->
+				<div id="navbar">
+					<a href="index.html" class="homeicon">Duorfan</a>
+				  
+					<div class="topnav-right">
+						<a href="projects.html">PROJECTS</a>
+						<a href="life.html">LIFE</a>
+						  <a href="about.html">ABOUT</a>
+					  
+					</div>
+				  </div>
+				<!-- <div class="frame__links">
+					<a href="https://tympanus.net/Tutorials/codrops-kinetic-typo/">Previous demo</a>
+					<a href="https://tympanus.net/codrops/?p=50073">Article</a>
+					<a href="https://github.com/codrops/ImageGridMotionEffect">GitHub</a>
+				</div> -->
+				<!-- <div class="frame__demos">
+					<a href="index.html" class="frame__demo">01</a>
+					<a href="index2.html" class="frame__demo">02</a>
+					<a href="index3.html" class="frame__demo frame__demo--current">03</a>
+				</div> -->
 			</div>
-		  </div>
-	<script>
-		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function() {
-		var currentScrollPos = window.pageYOffset;
-  		if (prevScrollpos > currentScrollPos) {
- 		   document.getElementById("navbar").style.top = "0";
- 		 } else {
-  		   document.getElementById("navbar").style.top = "-50px";
-  			}
-  		prevScrollpos = currentScrollPos;
+			<div class="content">
+				<div class="grid grid--img">
+					<div class="grid__item pos-1"><div class="grid__item-img" style="background-image:url(bg1.jpg);"></div></div>
+					<div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(bg2.jpg);"></div></div>
+					<div class="grid__item pos-3"><div class="grid__item-img" style="background-image:url(bg3.jpg);"></div></div>
+					<div class="grid__item pos-4"><div class="grid__item-img" style="background-image:url(bg4.jpg);"></div></div>
+					<div class="grid__item pos-5"><div class="grid__item-img" style="background-image:url(bg5.jpg);"></div></div>
+					<div class="grid__item pos-6"><div class="grid__item-img" style="background-image:url(bg6.jpg);"></div></div>
+					<div class="grid__item pos-7"><div class="grid__item-img" style="background-image:url(bg7.JPG);"></div></div>
+					<div class="grid__item pos-8"><div class="grid__item-img" style="background-image:url(bg8.JPG);"></div></div>
+					<div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(bg9.JPG);"></div></div>
+					<div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(bg10.JPG);"></div></div>
+				</div>
+				<h2 class="content__title no-select">
+					<span>Hi, I'm </span>
+					<span class="content__title-sub">DUORFAN</span>
+				</h2>
+			</div>
+		</main>
+        <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
+			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+		</svg>
 
-		}
-	</script>		
-
+		<!-- // var prevScrollpos = window.pageYOffset;
+		// window.onscroll = function() {
+		// var currentScrollPos = window.pageYOffset;
+  		// if (prevScrollpos > currentScrollPos) {
+ 		//    document.getElementById("navbar").style.top = "0";
+ 		//  } else {
+  		//    document.getElementById("navbar").style.top = "-50px";
+  		// 	}
+  		// prevScrollpos = currentScrollPos;		 -->
+	<script src="script.js"></script>
 	</body>
 </html>
