@@ -1,3 +1,4 @@
+  
   *,
   *::after,
   *::before {
@@ -423,6 +424,46 @@
   .container2:hover .overlay {
     opacity: 1;
   }
+  /* .buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+} */
+
+.socialIcons{
+  position: relative;
+  float:right;
+  right:20px;
+  margin:10px;
+  padding: 10px;;
+  bottom:100px;
+}
+.fa {
+  display: flex;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    color:#91b8f3;
+}
+.fa-linkedin {
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+.fa-tumblr {
+  color: white;
+}
+ 
+
 
 @media screen and (max-width: 950px) {
   .topnav-right {
