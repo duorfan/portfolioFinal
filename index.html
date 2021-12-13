@@ -20,7 +20,7 @@
 
 	<body>
 		<main>
-			<!-- <div class="message">Please view this demo on a desktop to see the effect.</div> -->
+
 			<div class="frame">
 				<div id="navbar">					
 					<a href="index.html">
@@ -62,25 +62,17 @@
 			<a href="https://www.instagram.com/duorfan/" class="fa fa-instagram"></a>
 			<a href="https://dduduuor.tumblr.com/" class="fa fa-tumblr"></a>
 		</div>
-		<!-- <div class="effect thurio">
-			<div class="buttons">
-			  <a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-			  <a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-			</div>
-		  </div> -->
+
         <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
 			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
 		</svg>
-
-		<!-- // var prevScrollpos = window.pageYOffset;
-		// window.onscroll = function() {
-		// var currentScrollPos = window.pageYOffset;
-  		// if (prevScrollpos > currentScrollPos) {
- 		//    document.getElementById("navbar").style.top = "0";
- 		//  } else {
-  		//    document.getElementById("navbar").style.top = "-50px";
-  		// 	}
-  		// prevScrollpos = currentScrollPos;		 -->
-	<script src="script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+		<script>
+		  var exports = {}; // quick fix because 'exports' is not defined in rich-text bundle below
+		</script>
+		<script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js"></script>
+		 <!-- mustache api-->
+		<script src="https://unpkg.com/mustache@latest"></script>
+	<script src="grid.js"></script>
 	</body>
 </html>

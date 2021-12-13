@@ -28,8 +28,18 @@
 			  
 			</div>
 		</div>
+		<div class="container1"></div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<!-- contentful apis-->
+		<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+		<script>
+		  var exports = {};
+		</script>
+		<script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js"></script>
+		 <!-- mustache api-->
+		<script src="https://unpkg.com/mustache@latest"></script>
 
-		<div class="gallery">
+		<!-- <div class="gallery">
 			<a class="blacktitle">INTERFACIAL DESIGN</a>
 			<a class="greytitle">Some attempts on UI design: using sketch & mockups</a>
 			<div class="column">
@@ -86,7 +96,7 @@
 			  <img src="map4.JPG" style="width:100%">
 			</div>   
 		  
-		</div>
+		</div> -->
 		<script>
 			var prevScrollpos = window.pageYOffset;
 			window.onscroll = function() {
@@ -100,5 +110,19 @@
 	
 			}
 		</script>	
+		<!-- <script>
+			(function(){
+			  app.initialize();
+			  app.getAllEntries();
+			})();
+		  </script> -->
+		  <script src="script.js"></script>
+		  <script>
+			(function(){
+			  app.initialize();
+			  // project id you get from contentful
+			  app.getEntry('2fgJ0mHlVJwwgVBPkUn1Q3');
+			})();
+		  </script>
 	</body>
 </html>
