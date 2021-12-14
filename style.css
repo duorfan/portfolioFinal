@@ -517,6 +517,14 @@
   justify-content: center;
   padding:10px 10px; 
 }
+.socialIcons{
+  position: relative;
+  float:right;
+  right:10px;
+  margin:5px;
+  padding: 8px;;
+  bottom:90px;
+}
 
 
 @media screen and (max-width: 820px) {
