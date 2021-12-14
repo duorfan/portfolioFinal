@@ -63,17 +63,27 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* .parallax {
-    background-image: url('WechatIMG2.jpeg');
+  .parallax {
+    background-image: url('lifeBg1.JPG');
 
-    height: 100pc; 
+    height: 40pc; 
     width: auto;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-   */
+  .parallax2 {
+    background-image: url('lifeBg1.JPG');
+
+    height: 20pc; 
+    width: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
 
   
   
@@ -165,10 +175,13 @@
   }
   
   .vlogPage{
-    background: #91b8f3;
-    color: white;
+    background: #060b31;
+    /* opacity: 0.5; */
+    color: #91b8f3;
     padding-top:50px;
     padding-bottom: 15%;
+    /* margin-bottom: 20%; */
+    
 
   }
 
@@ -241,18 +254,6 @@
 }
 
 
-
-.footerAbout{
-    position: absolute;
-    color:rgb(88, 52, 18);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin:10px;
-    padding-top: 10%;;
-    bottom:10px;
-}
   
 .fa {
   display: flex;
@@ -390,10 +391,11 @@
   }
   
 .dancePage{
-    background: #e7b99c;
-    color: white;
+    background: #060b31;
+    color: #e7b99c;
     padding-top:50px;
     padding-bottom: 15%; 
+    /* margin-bottom: 20%; */
     
 }
 .videogallery{
@@ -412,8 +414,8 @@
 
   }
 .sewPage{
-    background: #EFDCBE;
-    color: white;
+    background: #060b31;
+    color: #EFDCBE;
     padding-top:50px;
     padding-bottom: 20%;  
 }
