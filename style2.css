@@ -486,6 +486,8 @@
   padding:250px 100px;
 }
 
+
+/* Ipad media query */
 @media screen and (max-width: 950px) {
     .topnav-right {
         font-size: 15px;
@@ -543,7 +545,7 @@
   .click {
     font-size: 2.5vw;
     top:31%;
-    padding-left: 38%;
+    padding-left: 30%;
   }
 
   .parallax {
@@ -551,6 +553,7 @@
   }
 }
 
+/* iphoneX */
 @media screen and (max-width: 760px) {
     .topnav-right {
         font-size: 14px;
