@@ -279,7 +279,7 @@
         text-align: center;
     }
     .container{
-      width: 90%;
+      width: 100%;
       padding: 30px 40px 40px 35px ;
     }
     .container .content .right-side{
@@ -315,6 +315,26 @@
      width: 100%;
      margin-left: 0;
    }
+   .About{
+    width:94%;
+    height:auto;
+    border-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    margin-top:10%;
+    margin-bottom: 10%;
+  }
+  .content{
+    flex-direction: column-reverse;
+    padding-left:5%;
+    padding-top:5%;
+    padding-bottom:10%;
+  }
+  .containerImg{
+    width:100%;
+  }
   }
   
   
