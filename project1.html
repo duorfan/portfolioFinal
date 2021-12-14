@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<title>Project1</title>
+		<link rel="shortcut icon" href="duorfan logo.ico">
+				<!-- bely-display -->
+		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css"> 
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style2.css"/>
+	</head>
+
+	<body>
+		<div id="navbar">
+			<a href="index.html">
+				<div class="topnav-left">
+					<img src="logo transparent.png" class="logo-image">
+			</div>
+			</a>
+		  
+			<div class="topnav-right">
+				<a href="projects.html">PROJECTS</a>
+				<a href="life.html">LIFE</a>
+			  	<a href="about.html">ABOUT</a>
+			  
+			</div>
+		</div>
+		<div class="container1"></div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<!-- contentful apis-->
+		<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+		<script>
+		  var exports = {};
+		</script>
+		<script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js"></script>
+		<script src="https://unpkg.com/mustache@latest"></script>
+
+		<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			  if (prevScrollpos > currentScrollPos) {
+				document.getElementById("navbar").style.top = "0";
+			  } else {
+				 document.getElementById("navbar").style.top = "-50px";
+				  }
+			  prevScrollpos = currentScrollPos;
+	
+			}
+		</script>	
+		<!-- <script>
+			(function(){
+			  app.initialize();
+			  app.getAllEntries();
+			})();
+		  </script> -->
+		  <script src="script.js"></script>
+		  <script>
+			(function(){
+			  app.initialize();
+			  // project id you get from contentful
+			  app.getEntry('2fgJ0mHlVJwwgVBPkUn1Q3');
+			})();
+		  </script>
+	</body>
+</html>

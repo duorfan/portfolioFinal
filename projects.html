@@ -3,12 +3,16 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width">
-		<title>Duorfan's portfolio</title>
+		<title>Duorfan's projects</title>
 		<link rel="shortcut icon" href="duorfan logo.ico">
-		<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" /> -->
-		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
+				<!-- bely-display -->
+		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css"> 
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style2.css"/>
 	</head>
@@ -28,7 +32,31 @@
 			  
 			</div>
 		</div>
-		<div class="container1"></div>
+		<h2>
+			<span class="content__title-sub">Here's my latest PROJECTS! </span>
+		</h2>
+		<p class = "click">Click on the pictures to explore more.</p>
+		<div class="container0"></div>
+		<p class = "more">There are more in progression......</p>
+
+		<div class="footerProject">
+			<a href="https://www.linkedin.com/in/ningyu-fan-242915222/" class="fa fa-linkedin"></a>
+			<a href="https://www.instagram.com/duorfan/" class="fa fa-instagram"></a>
+			<a href="https://dduduuor.tumblr.com/" class="fa fa-tumblr"></a>
+		</div>
+		<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			  if (prevScrollpos > currentScrollPos) {
+				document.getElementById("navbar").style.top = "0";
+			  } else {
+				 document.getElementById("navbar").style.top = "-50px";
+				  }
+			  prevScrollpos = currentScrollPos;
+	
+			}
+		</script>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<!-- contentful apis-->
 		<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
@@ -36,8 +64,16 @@
 		  var exports = {};
 		</script>
 		<script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js"></script>
-		 <!-- mustache api-->
-		<script src="https://unpkg.com/mustache@latest"></script>
+		<script src="https://unpkg.com/mustache@latest"></script>	
+		  <script src="script.js"></script>
+		  <script>
+				(function(){
+				app.initialize();
+				app.getAllEntries();
+			})();
+		  </script>
+	</body>
+</html>
 
 		<!-- <div class="gallery">
 			<a class="blacktitle">INTERFACIAL DESIGN</a>
@@ -97,32 +133,4 @@
 			</div>   
 		  
 		</div> -->
-		<script>
-			var prevScrollpos = window.pageYOffset;
-			window.onscroll = function() {
-			var currentScrollPos = window.pageYOffset;
-			  if (prevScrollpos > currentScrollPos) {
-				document.getElementById("navbar").style.top = "0";
-			  } else {
-				 document.getElementById("navbar").style.top = "-50px";
-				  }
-			  prevScrollpos = currentScrollPos;
-	
-			}
-		</script>	
-		<!-- <script>
-			(function(){
-			  app.initialize();
-			  app.getAllEntries();
-			})();
-		  </script> -->
-		  <script src="script.js"></script>
-		  <script>
-			(function(){
-			  app.initialize();
-			  // project id you get from contentful
-			  app.getEntry('2fgJ0mHlVJwwgVBPkUn1Q3');
-			})();
-		  </script>
-	</body>
-</html>
+		
