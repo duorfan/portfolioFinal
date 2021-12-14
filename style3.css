@@ -73,6 +73,7 @@
     flex-wrap: wrap;
     justify-content:center;
     padding:250px 100px;
+    margin-bottom: 10%;
   }
   
   .Contact{
@@ -93,6 +94,8 @@
     line-height: 48px;
     letter-spacing: 5px;
     position: relative;
+    left:30%;
+    padding: 10%;
   }
   .greytitle{
     font-family: 'Nunito', sans-serif;
@@ -103,6 +106,37 @@
     font-size: 20px;
     text-align: center;   
   }
+  .content{
+    display: flex;
+    flex-direction: row;
+  }
+.profileImg{
+  width: 100%;
+}
+  .profile{
+    font-family: 'Nunito', sans-serif;
+    color:rgb(88, 88, 88);
+    width:100%;
+    height: auto;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  .containerAbout{
+   
+    width: 85%;
+    background: #eae9e6;
+    padding: 20px 60px 30px 40px;
+    border-radius: 50px;
+    box-shadow:  11px 11px 22px #d3d2cf,
+    -11px -11px 22px #fffffd;
+    margin-bottom: 10%;
+  }
+  .description{
+    display: flex;
+    flex-direction: column;
+  }
+
   .container{
     width: 85%;
     background: #eae9e6;
