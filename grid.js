@@ -138,17 +138,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     subClass.prototype.constructor = subClass;
     subClass.__proto__ = superClass;
   }
-  /*!
-   * GSAP 3.3.1
-   * https://greensock.com
-   *
-   * @license Copyright 2008-2020, GreenSock. All rights reserved.
-   * Subject to the terms at https://greensock.com/standard-license or for
-   * Club GreenSock members, the agreement issued with that membership.
-   * @author: Jack Doyle, jack@greensock.com
-  */
-  
-  /* eslint-disable */
   
   
   var _config = {
