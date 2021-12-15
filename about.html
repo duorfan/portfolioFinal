@@ -6,26 +6,14 @@
 		<title>Duorfan's About Page</title>
 		<link rel="shortcut icon" href="duorfan logo.ico">
 		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
+		<script src="https://unpkg.com/scrollreveal"></script>
 		<!-- Fontawesome CDN Link -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 		<link rel="stylesheet" type="text/css" href="style3.css"/>
 	</head>
 
 	<body>
-        <div id="navbar">
-			<a href="index.html">
-				<div class="topnav-left">
-					<img src="logo transparent.png" class="logo-image">
-			</div>
-			</a>
-		  
-			<div class="topnav-right">
-				<a href="projects.html">PROJECTS</a>
-				<a href="life.html">LIFE</a>
-			  	<a href="about.html">ABOUT</a>
-			  
-			</div>
-		</div>
+        
 		<div class="containerA"></div>
 
 		<div id="about" class="About">
@@ -94,9 +82,23 @@
 				<a href="https://www.instagram.com/duorfan/" class="fa fa-instagram"></a>
 				<a href="https://dduduuor.tumblr.com/" class="fa fa-tumblr"></a>
 			</div> -->
+			
           </div>
           
+		  <div id="navbar">
+			<a href="index.html">
+				<div class="topnav-left">
+					<img src="logo transparent.png" class="logo-image">
+			</div>
+			</a>
 		  
+			<div class="topnav-right">
+				<a href="projects.html">PROJECTS</a>
+				<a href="life.html">LIFE</a>
+				  <a href="about.html">ABOUT</a>
+			  
+			</div>
+		</div>  
 		<!-- <script src="scriptA.js"></script>
 		<script>
 			(function(){
@@ -117,6 +119,17 @@
   		prevScrollpos = currentScrollPos;
 
 		}
+	</script>
+
+	<script>
+			ScrollReveal({ 
+			// reset: true,
+			distance:"60px",
+			duration:2500,
+			delay:400});
+
+		ScrollReveal().reveal('.About', { delay: 200 , origin: "left"});
+		ScrollReveal().reveal('.container', { delay: 200 , origin: "right"});
 	</script>	
 
 

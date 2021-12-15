@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+		<script src="https://unpkg.com/scrollreveal"></script>
 		<link rel="stylesheet" type="text/css" href="style2.css"/>
 	</head>
 
@@ -40,9 +41,10 @@
 		<p class = "more">There are more in progression......</p>
 
 		<div class="footerProject">
-			<a href="https://www.linkedin.com/in/ningyu-fan-242915222/" class="fa fa-linkedin"></a>
-			<a href="https://www.instagram.com/duorfan/" class="fa fa-instagram"></a>
-			<a href="https://dduduuor.tumblr.com/" class="fa fa-tumblr"></a>
+			<a href="https://www.linkedin.com/in/ningyu-fan-242915222/"><i class="fa fa-linkedin"></i></a>
+			<a href="hhttps://www.instagram.com/duorfan/"><i class="fa fa-instagram"></i></a>
+			<a href="https://dduduuor.tumblr.com/"><i class="fa fa-tumblr"></i></a>
+
 		</div>
 		<script>
 			var prevScrollpos = window.pageYOffset;
@@ -71,6 +73,21 @@
 				app.initialize();
 				app.getAllEntries();
 			})();
+		  </script>
+		  <script>
+			ScrollReveal({ 
+				// reset: true,
+				distance:"60px",
+				duration:2500,
+				delay:400});
+
+			ScrollReveal().reveal('.content__title-sub', { delay: 300 , origin:"left"});
+			ScrollReveal().reveal('.click', { delay: 400 , origin:"right"});
+			ScrollReveal().reveal('.more', { delay: 400 , origin:"right"});
+			// ScrollReveal().reveal('.container0 .projectBlock0', { delay: 400 , origin:"bottom"});
+			// ScrollReveal().reveal('.footerProject i', { delay: 400 , origin: "bottom", interval: 200});
+
+
 		  </script>
 	</body>
 </html>

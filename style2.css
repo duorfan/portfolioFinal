@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
   }
+  .html{
+    scroll-behavior: smooth;
+  }
   #navbar {
     background-color: #b8b8c2b4;
     position: fixed;

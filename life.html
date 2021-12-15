@@ -5,44 +5,34 @@
 		<meta name="viewport" content="width=device-width">
 		<title>Duorfan's portfolio</title>
 		<link rel="shortcut icon" href="duorfan logo.ico">
+		<script src="https://unpkg.com/scrollreveal"></script>
 		<link rel="stylesheet" type="text/css" href="style2.css"/>
 	</head>
 
 	<body>
-		<div id="navbar">
-			<a href="index.html">
-				<div class="topnav-left">
-					<img src="logo transparent.png" class="logo-image">
-			</div>
-			</a>
-		  
-			<div class="topnav-right">
-				<a href="projects.html">PROJECTS</a>
-				<a href="life.html">LIFE</a>
-			  	<a href="about.html">ABOUT</a>
-			  
-			</div>
-		  </div>
 		  <div class="parallax"></div>
 
-		  <!-- <div class="bgImg">
-			<img src="vlog1.JPG" alt="Avatar" class="image">   
-		  </div> -->
 		  <div id="section1" class="vlogPage">
 
 			<h2 class="subtitle">RECENT MOMENTS</h2>
-			<h2 class="subtitle" style="font-size: 20px";>using Premiere & Jianying</h2>
+			<h2 class="subtitle" style="font-size: 20px";>click the images to watch my vlogs!</h2>
 			
 			<!-- <iframe src="//player.bilibili.com/player.html?aid=720649898&bvid=BV1aQ4y1z7zu&cid=413050399&page=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
 			<div class="vlogs">
 			<div class="container">
-				<img src="vlog1.JPG" alt="Avatar" class="image">   
+				<a href="https://www.bilibili.com/video/BV1aQ4y1z7zu?spm_id_from=333.999.0.0">
+					<img src="vlog1.JPG" alt="Avatar" class="image">
+				</a>
+				   
 				<div class="overlay">September</div>
 			  </div> 
 			
 			
 			<div class="container2">
-				<img src="vlog2.JPG" alt="Avatar" class="image">
+				<a href="https://www.bilibili.com/video/BV1pT4y1Z7k4?spm_id_from=333.999.0.0">
+					<img src="vlog2.JPG" alt="Avatar" class="image">
+				</a>
+				
 				<div class="overlay">Ocotober</div>
 			  </div> 
 			</div>
@@ -85,6 +75,20 @@
 				  </div>  
 				</div> 
 			  </div> 
+			  <div id="navbar">
+				<a href="index.html">
+					<div class="topnav-left">
+						<img src="logo transparent.png" class="logo-image">
+				</div>
+				</a>
+			  
+				<div class="topnav-right">
+					<a href="projects.html">PROJECTS</a>
+					<a href="life.html">LIFE</a>
+					  <a href="about.html">ABOUT</a>
+				  
+				</div>
+			  </div>
 			  <script src="https://unpkg.com/mustache@latest"></script>
 			  <script>
 				var prevScrollpos = window.pageYOffset;
@@ -99,6 +103,14 @@
 		
 				}
 			</script>	
+		<script>
+			ScrollReveal({ 
+				// reset: true,
+				distance:"60px",
+				duration:2500,
+				delay:400});
 
+			ScrollReveal().reveal('.subtitle', { delay: 200 , origin: "buttom"});
+		</script>
 	</body>
 </html>

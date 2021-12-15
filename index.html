@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://unpkg.com/scrollreveal"></script>
 		<script>document.documentElement.className = "js";
 		var supportsCssVars = function supportsCssVars() {
 			var e,
@@ -73,6 +74,19 @@
 		<script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js"></script>
 		 <!-- mustache api-->
 		<script src="https://unpkg.com/mustache@latest"></script>
+		<script>
+			ScrollReveal({ 
+				// reset: true,
+				distance:"60px",
+				duration:2500,
+				delay:400});
+			ScrollReveal().reveal('.topnav-right', { delay: 300 , origin:"buttom"});
+			ScrollReveal().reveal('.topnav-left', { delay: 300 , origin:"left"});
+			ScrollReveal().reveal('.socialIcons', { delay: 300 , origin:"buttom"});		
+			ScrollReveal().reveal('.content__title-sub', { delay: 300 , origin:"left"});
+
+			
+		</script>
 	<script src="grid.js"></script>
 	</body>
 </html>
