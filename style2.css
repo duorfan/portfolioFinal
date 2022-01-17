@@ -27,7 +27,7 @@
   #navbar a:hover {
     background-color: #91b8f3;;
     height: 50px;
-    color: black;
+    color: #ffffff;
     text-decoration: underline;
   }
   .topnav-left{
@@ -245,6 +245,17 @@
     padding-left: 42%;
   }
 
+  .blog {
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    font-size: 1.5vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2%;
+    }
+
 .footerProject{
     position: relative;
     width: 100%;
@@ -291,7 +302,7 @@
     width:60%;
     height: auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 15%;
