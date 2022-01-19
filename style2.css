@@ -5,7 +5,9 @@
     scroll-behavior: smooth;
   }
   #navbar {
-    background-color: #b8b8c2b4;
+    background-color: rgba(212, 216, 250, 0.171);
+    /* color: rgba(212, 216, 250, 0.781);
+    border-color: cornsilk; */
     position: fixed;
     height: 50px;
     top: 0;
@@ -25,7 +27,8 @@
   }
   
   #navbar a:hover {
-    background-color: #91b8f3;;
+    background-color: #91b8f3;
+    
     height: 50px;
     color: #ffffff;
     text-decoration: underline;
@@ -312,14 +315,19 @@
     width: 100%;
     align-items: center;
     padding-bottom: 10%;
+    opacity: 0.5;
   }
   
-  .projectBlock0 a {
-    text-align: center;
+  .projectBlock0:hover{
+    opacity: 1;
   }
   
   .projectBlock0 img {
     width: 100%;
+    border-radius:10%;
+  }
+  .projectBlock0 img:hover{  
+    border-radius: 0%;
   }
 
 .container1 {
