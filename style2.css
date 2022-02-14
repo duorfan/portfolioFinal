@@ -377,6 +377,11 @@
     padding-bottom: 10%;
   }
 
+  .projectDescription img {
+    width: 765px;
+    height: auto;
+}
+
   .container {
     position: relative;
     width: 40%;
