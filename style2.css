@@ -578,7 +578,9 @@
     top:31%;
     padding-left: 30%;
   }
-
+  .projectDescription img {
+    width: 550px;
+}
   .parallax {
     height: 45pc; 
   }
@@ -641,7 +643,9 @@
       .parallax2 {
         background-image: url('lifeBg2.jpeg');
       }
-      
+      .projectDescription img {
+        width: 300px;
+    } 
 }
 
 @media (any-pointer: fine) {
