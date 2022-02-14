@@ -47,16 +47,16 @@
     width: 45px;
     height: 50px;
 }
-  
+
   a {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--color-link);
     outline: none;
   }
   
   a:hover,
   a:focus {
-    text-decoration: none;
+    text-decoration:dotted;
     color: var(--color-link-hover);
     outline: none;
   }
