@@ -73,8 +73,8 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content:center;
-    margin-top:20%;
-    margin-bottom: 10%;
+    margin-top:5%;
+    margin-bottom: 15%;
   }
   
   .Contact{
@@ -263,7 +263,7 @@
         font-size: 15px;
       }
     .About{
-        padding:350px 50px;
+        padding:150px 50px;
     }
   }
   .containerImg{
@@ -293,7 +293,7 @@
   }
 
 
-  @media (max-width: 820px) {
+  @media (max-width: 760px) {
     .topnav-right {
         font-size: 14px;
       }
@@ -329,7 +329,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content:center;
-    margin-top:10%;
+    margin-top:5%;
     margin-bottom: 10%;
   }
   .content{

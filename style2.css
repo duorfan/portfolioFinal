@@ -70,7 +70,7 @@
   }
 
   .parallax {
-    background-image: url('lifeBg1.JPG');
+    background-image: url('seahalf.JPG');
 
     height: 35pc; 
     width: auto;
@@ -80,7 +80,7 @@
     background-size: cover;
   }
   .parallax2 {
-    background-image: url('lifeBg1.JPG');
+    background-image: url('seahalf.JPG');
 
     height: 20pc; 
     width: auto;
@@ -673,11 +673,11 @@ padding: 5%;
  
       }
       .parallax {
-        background-image: url('lifeBg2.jpeg');
-        height: 25pc; 
+        background-image: url('sea.JPG');
+        height: 29pc; 
       }
       .parallax2 {
-        background-image: url('lifeBg2.jpeg');
+        background-image: url('sea.JPG');
       }
       .fa {
         padding: 28px;
