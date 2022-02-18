@@ -202,18 +202,18 @@
     position: relative;
   }
   .greytitle{
-    background-color: white;
     font-family: 'Nunito', sans-serif;
-    color:rgb(88, 88, 88);
+    color:rgb(208, 220, 231);
     width:100%;
+    font-weight: lighter;
     height: auto;
-    line-height: 80px;
-    font-size: 20px;
-    /* text-align: center;    */
+    font-size: 18px;
+    padding-bottom: 60px;
+    text-align: center;
   }
   .subtitle{
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-      padding:40px;
+      padding-top:40px;
       font-size: 30px;
       text-align: center;
   }
@@ -527,7 +527,6 @@
 .greytitle{
   padding-bottom: 0px;
   padding-left: 30px;
-  float:left;
 }
 
 .subtitle{
@@ -674,7 +673,7 @@ padding: 5%;
       }
       .parallax {
         background-image: url('sea.JPG');
-        height: 29pc; 
+        height: 36pc; 
       }
       .parallax2 {
         background-image: url('sea.JPG');
