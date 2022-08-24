@@ -297,9 +297,7 @@
     .topnav-right {
         font-size: 14px;
       }
-    .About{
-        padding:150px 25px;
-    }
+
     .container{
       margin: 40px 0;
       height: 100%;
@@ -324,6 +322,7 @@
    .About{
     width:94%;
     height:auto;
+    padding:50px 25px;
     border-color: gray;
     display: flex;
     flex-wrap: wrap;
