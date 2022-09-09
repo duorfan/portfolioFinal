@@ -37,7 +37,56 @@
 			<span class="content__title-sub">Here's my latest PROJECTS! </span>
 		</h2>
 		<p class = "click">Click on the pictures to explore more.</p>
-		<div class="container0"></div>
+		
+		<!-- gallery -->
+		<div class="container0">
+			<div class= "card">
+				<a href= "projectYaoud.html">
+					<img src= "ui 4.jpg" class= "gridImage">
+				</a>
+				<a href= "projectYaoud.html" class="text">UI interface design
+				</a>
+
+			</div>
+			<div class= "card">
+				<a href= "projectMagazine.html">
+					<img src= "bg7.JPG" class= "gridImage">
+				</a>
+				<a href= "projectMagazine.html" class="text">Typography
+				</a>
+			</div>
+			<div class= "card">
+				<a href= "projectDeer.html">
+					<img src= "bg8.jpg" class= "gridImage">
+				</a>
+				<a href= "projectDeer.html" class="text">Fabrication
+				</a>
+			</div>
+			<div class= "card">
+				<a href= "projectDeer.html">
+					<img src= "bg8.jpg" class= "gridImage">
+				</a>
+				<a href= "projectDeer.html" class="text">Fabrication
+				</a>
+			</div>
+			<div class= "card">
+				<a href= "projectDeer.html">
+					<img src= "bg8.jpg" class= "gridImage">
+				</a>
+				<a href= "projectDeer.html" class="text">Fabrication
+				</a>
+			</div>
+			<div class= "card">
+				<a href= "projectDeer.html">
+					<img src= "bg8.jpg" class= "gridImage">
+				</a>
+				<a href= "projectDeer.html" class="text">Fabrication
+				</a>
+			</div>
+
+		</div>
+
+		<!-- more documentations -->
 		<p class = "more">More documentations below:</p>
 		<a class = "blog" href="https://caring-trader-7ce.notion.site/ab3cd2cefe61476ba31255ee6b50a902?v=85889b7c500d4ad581f9f84e5d29b496">Machine Learning</a>
 		<a class = "blog" href="https://caring-trader-7ce.notion.site/Intro-to-Fabrication-664500d140f644e8a82ce097b014a491">Fabrication</a>
@@ -49,6 +98,7 @@
 		</div>
 		</a>
 		
+		<!-- nav bar -->
 		<div id="navbar">
 			
 		  
@@ -80,8 +130,9 @@
 			}
 		</script> -->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		
 		<!-- contentful apis-->
-		<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 		<script>
 		  var exports = {};
 		</script>
@@ -93,23 +144,25 @@
 				app.initialize();
 				app.getAllEntries();
 			})();
-		  </script>
-		  <script>
-			ScrollReveal({ 
-				// reset: true,
-				distance:"60px",
-				duration:2500,
-				delay:400});
+		  </script> -->
 
-			ScrollReveal().reveal('.content__title-sub', { delay: 300 , origin:"left"});
-			ScrollReveal().reveal('.click', { delay: 400 , origin:"right"});
-			ScrollReveal().reveal('.more', { delay: 400 , origin:"left"});
-			ScrollReveal().reveal('.blog', { delay: 400 , origin:"right"});
-			ScrollReveal().reveal('.container0, .projectBlock0', { delay: 600 , origin:"bottom"});
-			ScrollReveal().reveal('.footerProject i', { delay: 600 , origin:"bottom"});
-	
+		<!-- scroll effects -->
+		<script>
+		ScrollReveal({ 
+			// reset: true,
+			distance:"60px",
+			duration:2500,
+			delay:400});
+
+		ScrollReveal().reveal('.content__title-sub', { delay: 300 , origin:"left"});
+		ScrollReveal().reveal('.click', { delay: 400 , origin:"right"});
+		ScrollReveal().reveal('.more', { delay: 400 , origin:"left"});
+		ScrollReveal().reveal('.blog', { delay: 400 , origin:"right"});
+		ScrollReveal().reveal('.container0, .card', { delay: 600 , origin:"bottom"});
+		ScrollReveal().reveal('.footerProject i', { delay: 600 , origin:"bottom"});
 
 
-		  </script>
+
+		</script>
 	</body>
 </html>
